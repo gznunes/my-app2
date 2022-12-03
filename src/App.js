@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './componentes/hello';
+import HiMessage from './componentes/HiMessage';
+import MeuCard from './componentes/MeuCard';
+import ListaCards from './componentes/ListaCards';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Hello/>
+        <MeuCard titulo="Card 1">
+            <h4>teste</h4>
+        </MeuCard>
+        <MeuCard titulo="Card 1">
+            <h4>Outros do card 2</h4>
+            <h4>teste</h4>
+        </MeuCard>
+        <ListaCards/>
     </div>
   );
 }
